@@ -10,7 +10,7 @@ module.exports = {
         veryDarkBlueBG: 'hsl(217, 54%, 11%)',
         veryDarkBlueCardBG: 'hsl(216, 50%, 16%)',
         veryDarkBlueLine: 'hsl(215, 32%, 27%)',
-        white: 'hsl(0, 0%, 100%)'
+        myWhite: 'hsl(0, 0%, 100%)'
       },
       fontFamily: {
         outfit: "'Outfit', sans-serif;"

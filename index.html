@@ -15,15 +15,21 @@
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
-<body class="relative bg-veryDarkBlueBG h-screen w-screen font-outfit text-white">
+<body class="relative bg-veryDarkBlueBG h-screen w-screen font-outfit text-softBlue">
   
   <main class="w-[327px] h-[542px] bg-veryDarkBlueCardBG flex flex-col justify-between p-6 rounded-2xl absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
     
-    <img class="w-[279px] h-[279px] rounded-xl" src="images/image-equilibrium.jpg" alt="Equilibrium, by Jules Wyvern">
+    <div class="w-[279px] h-[279px] relative">
+      <img class="rounded-xl" src="images/image-equilibrium.jpg" alt="Equilibrium, by Jules Wyvern">
+      <div class="absolute h-full w-full left-0 top-0 opacity-0 hover:opacity-100 hover:cursor-pointer">
+        <div class="h-full w-full bg-cyan opacity-50 rounded-xl"></div>
+        <img class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" src="images/icon-view.svg" alt="Icon view. An eye.">
+      </div>
+    </div>
     
-    <h1 class="text-[1.4rem] font-[600] mt-[6px] -mb-[6px]">Equilibrium #3429</h1>
+    <h1 class="text-[1.4rem] font-[600] text-myWhite mt-[6px] -mb-[6px] hover:cursor-pointer hover:text-cyan">Equilibrium #3429</h1>
     
-    <p class="text-softBlue font-[300]">Our Equilibrium collection promotes balance and calm.</p>
+    <p class="font-[300]">Our Equilibrium collection promotes balance and calm.</p>
     
     <div class="flex justify-between">
       <div class="flex items-center gap-[7px]">
@@ -32,15 +38,15 @@
       </div>
       <div class="flex items-center gap-[7px]">
         <span><img src="images/icon-clock.svg" alt="Clock icon"></span>
-        <span class="text-softBlue font-[400]">3 days left</span>
+        <span class="font-[400]">3 days left</span>
       </div>
     </div>
     
     <hr class="border-veryDarkBlueLine">
     
     <div class="flex items-center justify-left gap-[18px]">
-      <img class="border border-white rounded-full h-[34px] w-[34px]" id="avatar" src="images/image-avatar.png" alt="Jules Wyvern profile picture">
-      <p class="text-softBlue text-[15px]">Creation of <span class="text-white ml-[2px]">Jules Wyvern</span></p>
+      <img class="border border-myWhite rounded-full h-[34px] w-[34px]" id="avatar" src="images/image-avatar.png" alt="Jules Wyvern profile picture">
+      <p class="text-[15px]">Creation of <span class="text-myWhite ml-[2px] hover:cursor-pointer hover:text-cyan">Jules Wyvern</span></p>
     </div>
 
   </main>
